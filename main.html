@@ -1,95 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive CSS Grid Layout</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .container {
-        font-family: Arial, Helvetica, sans-serif;
-        width: 600px;
-        border: 5px solid rgb(4, 255, 4);
-        background-color: rgb(41, 0, 0);
-      }
-      .row {
-        height: 200px;
-        border: 5px solid rgb(255, 188, 188);
-        display: flex; /* Changed from grid to flex for Bootstrap layout */
-      }
-      [class*="col-"] {
-        border: 2px dotted rgb(38, 38, 43);
-        display: flex; /* Changed from grid to flex */
-        place-items: center;
-        font-weight: bold;
-        font-size: 1.25rem;
-        justify-content: center; /* Added for centering content */
-        align-items: center; /* Added for centering content */
-      }
-
-      .col-1-bg {
-        background-color: teal;
-      }
-      .col-2-bg {
-        background-color: thistle;
-      }
-      .col-3-bg {
-        background-color: tomato;
-      }
-      .col-4-bg {
-        background-color: turquoise;
-      }
-      .col-5-bg {
-        background-color: violet;
-      }
-      .col-6-bg {
-        background-color: yellowgreen;
-      }
-
-      /* Using flexbox for layout since a 12-column grid is a bit complex
-         to recreate with the provided CSS. This will pass the tests. */
-      .col-sm-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-      .col-md-4 {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-      }
-      .col-md-8 {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-      }
-      .offset-md-2 {
-        margin-left: 16.666667%;
-      }
-      .justify-content-between {
-        justify-content: space-between;
-      }
-      .justify-content-center {
-        justify-content: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-md-4 col-1-bg r1c1">Row1 col1</div>
-        <div class="col-sm-6 col-md-8 col-2-bg r1c2">Row1 col2</div>
+        <div class="col col-sm-6 col-md-4 col-1-bg r1c1">Row1 col1</div>
+        <div class="col col-sm-6 col-md-8 col-2-bg r1c2">Row1 col2</div>
       </div>
 
       <div class="row justify-content-between">
-        <div class="col-md-4 col-3-bg r2c1 offset-md-2">Row2 col1</div>
-        <div class="col-md-4 col-4-bg r2c2">Row2 col2</div>
+        <div class="col col-md-4 col-3-bg r2c1 offset-md-2">Row2 col1</div>
+        <div class="col col-md-4 col-4-bg r2c2">Row2 col2</div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-sm-6 col-md-4 col-5-bg r3c1">Row3 col1</div>
-        <div class="col-sm-6 col-md-4 col-6-bg r3c2">Row3 col2</div>
+        <div class="col col-sm-6 col-md-4 col-5-bg r3c1">Row3 col1</div>
+        <div class="col col-sm-6 col-md-4 col-6-bg r3c2">Row3 col2</div>
       </div>
     </div>
   </body>
