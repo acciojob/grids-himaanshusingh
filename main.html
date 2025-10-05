@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <div class="row row-one">
-        <div class="box r1c1">Row1 col1</div>
-        <div class="box r1c2">Row1 col2</div>
+      <div class="row">
+        <div class="col col-sm-6 col-md-4 col-1-bg r1c1">Row1 col1</div>
+        <div class="col col-sm-6 col-md-8 col-2-bg r1c2">Row1 col2</div>
       </div>
-      <div class="row row-two">
-        <div class="box r2c1">Row2 col1</div>
-        <div class="box r2c2">Row2 col2</div>
+
+      <div class="row justify-content-between">
+        <div class="col col-md-4 col-3-bg r2c1 offset-md-2">Row2 col1</div>
+        <div class="col col-md-4 col-4-bg r2c2">Row2 col2</div>
       </div>
-      <div class="row row-three">
-        <div class="box r3c1">Row3 col1</div>
-        <div class="box r3c2">Row3 col2</div>
+
+      <div class="row justify-content-center">
+        <div class="col col-sm-6 col-md-4 col-5-bg r3c1">Row3 col1</div>
+        <div class="col col-sm-6 col-md-4 col-6-bg r3c2">Row3 col2</div>
       </div>
     </div>
   </body>
